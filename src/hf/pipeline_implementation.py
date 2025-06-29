@@ -4,6 +4,9 @@ import requests
 
 # load pipe
 image_classifier = pipeline(task="zero-shot-image-classification", model="google/siglip-base-patch16-224")
+print("============= Image Classifier Architecture =============")
+print(image_classifier.model)
+print("============= End Image Classifier Architecture =============")
 
 # load image
 url = 'http://images.cocodataset.org/val2017/000000039769.jpg'
